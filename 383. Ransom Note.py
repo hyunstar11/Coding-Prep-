@@ -16,4 +16,6 @@ class Solution(object):
         
         # ransom note와 magazine 사이에 공통으로 존재하는 요소는 무엇인지 -> 그 공통으로 존재하는 요소를 통해 random note를 만들 수 있는지 확인 
         return st1 & st2 == st1
+    
         # A. Hash / Counter 를 쓰는 이유: 해시 없이는 위의 & operator 를 사용할 수 없음. 고로 어떤 엘레멘트가 노트와 매거진 사이에 공통으로 존재하는지 알 수 없음
+        # TypeError: unsupported operand type(s) for &: 'str' and 'str'  
