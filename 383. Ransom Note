@@ -1,0 +1,4 @@
+class Solution(object):
+    def canConstruct(self, ransomNote, magazine):
+        st1, st2 = Counter(ransomNote), Counter(magazine)
+        st1 & st2 == st1 #ransomNote 와 magazine 이 같은지 확인.. 같으면 참 다르면 거짓..
